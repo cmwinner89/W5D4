@@ -3,6 +3,6 @@ class User < ApplicationRecord
 
     has_many :submitted_urls,
         primary_key: :id,
-        foreign_key: :submitter_id,
+        foreign_key: :user_id,
         class_name: :ShortenedUrl
 end
